@@ -1,5 +1,5 @@
 
-package cordova-plugins-paypal-swiper;
+package cordova-plugins-paypalswiper;
 
 import java.util.TimeZone;
 
@@ -13,7 +13,8 @@ import org.json.JSONObject;
 
 import android.provider.Settings;
 
-public class PayPalSwiper extends CordovaPlugin {
+public class PayPalSwiper extends CordovaPlugin 
+{
     public static final String TAG = "PayPalSwiper";
 
     public static String platform;                            // Device OS
