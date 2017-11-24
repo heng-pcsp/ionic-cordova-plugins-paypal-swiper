@@ -9,7 +9,11 @@
       <keyword>cordova,ionic,plugin,paypal,swiper,paypalheresdk</keyword>
 
       <js-module name="paypalswiper" src="www/paypalswiper.js">
+         <clobbers target="cordova.plugins.PayPalSwiper" />
+         <clobbers target="plugins.PayPalSwiper" />
          <clobbers target="window.PayPalSwiper" />
+         <clobbers target="window.cordova.plugins.PayPalSwiper" />
+         <clobbers target="window.plugins.PayPalSwiper" />
       </js-module>
 
    	<platform name="android">
