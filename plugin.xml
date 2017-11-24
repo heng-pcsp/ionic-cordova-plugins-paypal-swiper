@@ -11,8 +11,7 @@
    	<platform name="android">
 
    		<js-module name="PayPalSwiper" src="www/android/PayPalSwiper.js">
-	      	<clobbers target="cordova.plugins.paypal.swiper" />
-	      	<clobbers target="cordova.plugins.pay.pal.swiper" />
+	      	<clobbers target="window.PayPalSwiper" />
 	   	</js-module>
 
       	<config-file parent="/*" target="res/xml/config.xml">
@@ -30,8 +29,7 @@
    	<platform name="ios">
 
    		<js-module name="PayPalSwiper" src="www/ios/PayPalSwiper.js">
-	      	<clobbers target="cordova.plugins.paypal.swiper" />
-	      	<clobbers target="cordova.plugins.pay.pal.swiper" />
+	      	<clobbers target="window.PayPalSwiper" />
 	   	</js-module>
 
       	<config-file parent="/*" target="config.xml">
