@@ -8,15 +8,16 @@
 
       <keyword>cordova,ionic,plugin,paypal,swiper,paypalheresdk</keyword>
 
-   	<platform name="android">
+      <js-module name="PayPalSwiper" src="www/PayPalSwiper.js">
+         <clobbers target="window.PayPalSwiper" />
+      </js-module>
 
-   		<js-module name="PayPalSwiper" src="www/android/PayPalSwiper.js">
-	      	<clobbers target="window.PayPalSwiper" />
-	   	</js-module>
+   	<platform name="android">
 
       	<config-file parent="/*" target="res/xml/config.xml">
          	<feature name="PayPalSwiper">
             	<param name="android-package" value="cordova-plugins-paypal-swiper.PayPalSwiper" />
+               <param name="onload" value="true" />
          	</feature>
       	</config-file>
 
@@ -27,10 +28,6 @@
    	</platform>
 
    	<platform name="ios">
-
-   		<js-module name="PayPalSwiper" src="www/ios/PayPalSwiper.js">
-	      	<clobbers target="window.PayPalSwiper" />
-	   	</js-module>
 
       	<config-file parent="/*" target="config.xml">
 
