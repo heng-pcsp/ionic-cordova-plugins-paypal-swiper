@@ -1,0 +1,26 @@
+{
+  "name": "PayPalSwiper",
+  "version": "0.0.1",
+  "description": "Cordova Plugin PayPal Here SDK",
+  "cordova": {
+    "id": "cordova-plugins-paypal-swiper",
+    "platforms": [
+      "ios",
+      "android"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heng-pcsp/ionic-cordova-plugins-paypal-swiper.git"
+  },
+  "keywords": [
+    "cordova",
+    "ionic",
+    "paypal",
+    "here",
+    "sdk",
+    "swiper",
+    "payplaheresdk"
+  ],
+  "author": "Phin Heng"
+}

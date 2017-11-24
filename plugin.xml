@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" xmlns:android="http://schemas.android.com/apk/res/android" id="cordova-plugins-paypal-swiper" version="0.0.1">
+   	
+   	<name>PayPalSwiper</name>
+
+      <repo>https://github.com/heng-pcsp/ionic-cordova-plugins-paypal-swiper.git</repo>
+
+      <keyword>cordova,ionic,plugin,paypal,swiper,paypalheresdk</keyword>
+
+   	<platform name="android">
+
+   		<js-module name="PayPalSwiper" src="www/android/PayPalSwiper.js">
+	      	<clobbers target="cordova.plugins.paypal.swiper" />
+	      	<clobbers target="cordova.plugins.pay.pal.swiper" />
+	   	</js-module>
+
+      	<config-file parent="/*" target="res/xml/config.xml">
+         	<feature name="PayPalSwiper">
+            	<param name="android-package" value="cordova-plugins-paypal-swiper.PayPalSwiper" />
+         	</feature>
+      	</config-file>
+
+      	<config-file parent="/*" target="AndroidManifest.xml" />
+
+      	<source-file src="src/android/PayPalSwiper.java" target-dir="src/cordova-plugins-paypal-swiper/PayPalSwiper" />
+
+   	</platform>
+
+   	<platform name="ios">
+
+   		<js-module name="PayPalSwiper" src="www/ios/PayPalSwiper.js">
+	      	<clobbers target="cordova.plugins.paypal.swiper" />
+	      	<clobbers target="cordova.plugins.pay.pal.swiper" />
+	   	</js-module>
+
+      	<config-file parent="/*" target="config.xml">
+
+         	<feature name="PayPalSwiper">
+            	<param name="ios-package" value="PayPalSwiper" />
+         	</feature>
+
+      	</config-file>
+
+      	<source-file src="src/ios/PayPalSwiper.m" />
+
+   	</platform>
+   	
+</plugin>
