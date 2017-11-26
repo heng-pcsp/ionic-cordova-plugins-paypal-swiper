@@ -1,5 +1,5 @@
 
-package cordova-plugins-paypalswiper;
+package cordova.plugins.paypalswiper;
 
 import java.util.TimeZone;
 
